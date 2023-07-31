@@ -1,0 +1,87 @@
+
+
+/* ////// */
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+.container{
+    /* background: radial-gradient(red,blue,green); */
+    /* background: linear-gradient(45deg,red,white); */
+    background-color: #444;
+    padding: 15px 9%;
+    padding-bottom: 100px;
+}
+.container .heading{
+    text-align: center;
+    padding-bottom:15px ;
+    color: white;
+    text-shadow: 0 5px 10px rgba(0,0,0,.2);
+    font-size: 50px;
+}
+.container .box-container{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(270px,1fr)) ;
+    gap: 15px;
+}
+.container .box-container .box{
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    background: white;
+    text-align: center;
+    padding: 30px 20px ;
+}
+.container .box-container .box img{
+    height: 80px;
+}
+.container .box-container .box h3{
+    color: #444;
+    font-size: 15px;
+    line-height: 1.8;
+}
+.container .box-container .box .btn{
+    margin-top: 10px;
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 8px 25px;
+}
+.container .box-container .box .btn:hover{
+  letter-spacing: 1px;  
+}
+.container .box-container .box:hover{
+    box-shadow: 0px 10px 15px rgb(red, green, blue);
+}
+/*  */
+.flicker {
+    font-size: 6rem;
+    font-family: 'Merienda', sans-serif;
+    margin: 1rem auto;
+    color: #fffefe61;
+    background: -webkit-gradient(linear, left top, right top, from(red), to(#1d1c1c), color-stop(0.8, #ffffff)) no-repeat;
+    /* background: gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.8, #fff)) no-repeat; */
+    background-size: 110px 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: flick 1.5s infinite;
+    margin-left: 90px;
+
+  }
+  @keyframes flick {
+    0% {
+      background-position: top left;
+    }
+    100% {
+      background-position: top right;
+    }
+  }
+
+/*  */
